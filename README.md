@@ -11,7 +11,7 @@ Deve-se desenvolver uma aplicação mobile em Android,  de preferência utilizan
 # Cenário fictício
 O Biologia Total está lançando uma aplicação mobile em Android (Kotlin) que exiba uma lista de áreas de estudo (Bioquímica, Botânica, Cinemática, etc). Para isso, basta fazer uma requisição em nossa API na URL http://backend-alpha.biologiatotal.com.br/v2/admin/areas?start=0&end=999, exibindo seu título (title) e o nome da disciplina (subject -> title). 
 
-Ao clicar em uma área de estudo, deve-se exibir uma nova tela com as videoaulas existentes da área de estudo selecionada. Para isso, basta enviar uma requisição em nossa API na URL http://backend-alpha.biologiatotal.com.br/v2/admin/lessons?filter={"area":{"value":"5a9fae2d90b8623f0344471b","modifier":"Igual","type":"id"}}  , onde o parâmetro value deve ser substituído pelo atributo id das áreas de estudo, como por exemplo 5a9fae2d90b8623f0344471b (Ecologia), 5a9fae2d90b8623f03444749 (Eletricidade), entre outros.
+Ao clicar em uma área de estudo, deve-se exibir uma nova tela com as videoaulas existentes da área de estudo selecionada, em forma de lista, exibindo o título (title). Para isso, basta enviar uma requisição em nossa API na URL http://backend-alpha.biologiatotal.com.br/v2/admin/lessons?filter={"area":{"value":"**5a9fae2d90b8623f0344471b**","modifier":"Igual","type":"id"}}  , por exemplo, onde o parâmetro value deve ser substituído pelo atributo id das áreas de estudo, como por exemplo 5a9fae2d90b8623f0344471b (Ecologia), 5a9fae2d90b8623f03444749 (Eletricidade), entre outros.
 
 # Observações
 - Não é necessário desenvover tela de login / autenticação. 
